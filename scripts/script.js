@@ -254,39 +254,36 @@ console.log(newArray);
 /* Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar la función y guardar
 el resultado en una variable, mostrando el valor de dicha variable en la consola del navegador. */
 
-function sum(a,b) {
+function sum1(a,b) {
     return a + b;
 }
 
-var result = sum(3,75);
+var result = sum1(3,75);
 
 console.log(result);
 
 /* A la función suma anterior, agregarle una validación para controlar si alguno de los parámetros no es un número,
 mostrar una alerta aclarando que uno de los parámetros tiene error y retornar el valor NaN como resultado. */
 
-function sum(a,b) {
+function sum2(a,b) {
     if((typeof(a) != 'number') || (typeof(b) != 'number')){
         alert('This function only accepts numbers. Please check the arguments');
         return NaN;    
-    }
-        
+    }   
     return a + b;
 }
 
-console.log(sum(3,'Carlos'));
+console.log(sum2(3,'Carlos'));
 
-console.log(sum(3,8));
+console.log(sum2(3,8));
 
 /* Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número 
 entero. */
 
 function validateInteger(a) {
     if((typeof(a) === 'number') && ( a%1 === 0)){
-
         return true;  
     }
-        
     return false;
 }
 
@@ -297,7 +294,7 @@ console.log(validateInteger('Luis'));
 /* A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. En caso que
 haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado). */
 
-function sum(a,b) {
+function sum3(a,b) {
     if((typeof(a) != 'number') || (typeof(b) != 'number')){
         alert('This function only accepts numbers. Please check the arguments');
         return NaN;    
@@ -309,6 +306,29 @@ function sum(a,b) {
     return a + b;
 }
 
-console.log(sum(15.3,8));
-console.log(sum(15,9));
-console.log(sum('Luis',3));
+console.log(sum3(15.3,8));
+console.log(sum3(15,9));
+console.log(sum3('Luis',3));
+
+/* Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la función suma
+probando que todo siga funcionando igual. */
+
+function validateIntNum(a){
+    if(typeof(a) != 'number'){
+        alert('This function only accepts numbers. Please check the arguments');
+        return NaN;    
+    }
+    if(!validateInteger(a)){
+        alert('At least one of the arguments is not integer');
+        return Math.round(a);
+    }       
+    return a;
+}
+
+function sum4(a,b) {
+    return validateIntNum(a) + validateIntNum(b);
+}
+
+console.log(sum4(15.3,8));
+console.log(sum4(15,9));
+console.log(sum4('Luis',3));
