@@ -91,8 +91,24 @@ var longString = "inComprEhenSibIliTies dichloRodifluOromeThaNe";
 
 var spaceIndex = longString.indexOf(' ');
 
-var firstWord = longString.substring(0,1).toUpperCase() + longString.substring(1,spaceIndex).toLowerCase();
+var firstWord = longString.substring(0,1).toUpperCase() +
+                longString.substring(1,spaceIndex).toLowerCase();
 
-var secondWord = longString.substring(spaceIndex + 1, spaceIndex + 2).toUpperCase() + longString.substring(spaceIndex + 2).toLowerCase();                
+var secondWord = longString.substring(spaceIndex + 1, spaceIndex + 2).toUpperCase() +
+                 longString.substring(spaceIndex + 2).toLowerCase();                
 
 console.log(firstWord + ' ' + secondWord);
+
+/* ********************************
+*     Arrays
+* ********************************/
+
+/* Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+"Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses
+5 y 11 (utilizar console.log) */
+
+var monthsArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+                   "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+console.log(monthsArray[4]);
+console.log(monthsArray[10]);
