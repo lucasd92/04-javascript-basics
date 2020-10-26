@@ -20,3 +20,13 @@
 
  var result = firstString + secondString;
  console.log(firstString + '+' + secondString + '=' + result);
+
+/*  Crear dos variables de tipo String y sumar el largo de cada variable 
+(cantidad de letras del string) guardando el resultado la suma una 3er variable 
+(utilizar length). */
+
+var firstString = 'Hello';
+var secondString = 'World';
+
+var result = firstString.length + secondString.length;
+console.log('length of ' + firstString + '+' +'length of ' + secondString + '=' + result);
