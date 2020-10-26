@@ -123,3 +123,10 @@ monthsArray.unshift('newFirstMonth');
 monthsArray.push('newLastMonth');
 
 console.log(monthsArray);
+
+/* Quitar un elemento del principio y del final del array (utilizar shift y pop). */
+
+monthsArray.shift();
+monthsArray.pop();
+
+console.log(monthsArray);
