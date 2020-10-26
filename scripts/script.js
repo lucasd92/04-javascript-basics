@@ -293,3 +293,22 @@ function validateInteger(a) {
 console.log(validateInteger(15.3));
 console.log(validateInteger(15));
 console.log(validateInteger('Luis'));
+
+/* A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. En caso que
+haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado). */
+
+function sum(a,b) {
+    if((typeof(a) != 'number') || (typeof(b) != 'number')){
+        alert('This function only accepts numbers. Please check the arguments');
+        return NaN;    
+    }
+    if(!validateInteger(a) || !validateInteger(b)){
+        alert('At least one of the arguments is not integer');
+        return Math.round(a) + Math.round(b);
+    }    
+    return a + b;
+}
+
+console.log(sum(15.3,8));
+console.log(sum(15,9));
+console.log(sum('Luis',3));
