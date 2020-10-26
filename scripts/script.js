@@ -261,3 +261,19 @@ function sum(a,b) {
 var result = sum(3,75);
 
 console.log(result);
+
+/* A la función suma anterior, agregarle una validación para controlar si alguno de los parámetros no es un número,
+mostrar una alerta aclarando que uno de los parámetros tiene error y retornar el valor NaN como resultado. */
+
+function sum(a,b) {
+    if((typeof(a) != 'number') || (typeof(b) != 'number')){
+        alert('This function only accepts numbers. Please check the arguments')
+        return NaN    
+    }
+        
+    return a + b;
+}
+
+console.log(sum(3,'Carlos'));
+
+console.log(sum(3,8));
