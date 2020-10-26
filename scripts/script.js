@@ -51,3 +51,13 @@ console.log('length of ' + firstString + '+' +'length of ' + secondString + '=' 
   var shortString = longString.substring(0,5);
 
   console.log(shortString);
+
+  /* Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo
+   string con los últimos 3 caracteres guardando el resultado en una nueva variable 
+   (utilizar substring). */
+
+   var longString = "i'm a long string";
+
+   var shortString = longString.substring((longString.length-3));
+
+   console.log(shortString);
