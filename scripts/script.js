@@ -135,7 +135,8 @@ console.log(monthsArray);
 
 console.log(monthsArray.reverse());
 
-/* Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join). */
+/* Unir todos los elementos del array en un único string donde cada mes este separado 
+por un guión - (utilizar join). */
 
 var monthsString = monthsArray.join('-');
 
@@ -146,6 +147,24 @@ console.log(monthsString);
 var monthsArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
                    "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
-var newShortMonthsArray = monthsArray.slice(monthsArray.indexOf('Mayo'), monthsArray.indexOf('Noviembre') + 1);
+var newShortMonthsArray = monthsArray.slice(monthsArray.indexOf('Mayo'),
+                                            monthsArray.indexOf('Noviembre') + 1);
 
 console.log(newShortMonthsArray);
+
+/* ********************************
+*     If Else
+* ********************************/
+
+/* Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es mayor
+o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y sino un alerta con el mensaje
+“Lower than 0,5” */
+
+var randomNumber = Math.random();
+
+if(randomNumber >= 0.5){
+    alert('Greater than 0,5');
+}
+else{
+    alert('Lower than 0,5');
+}
