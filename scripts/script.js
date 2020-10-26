@@ -246,3 +246,18 @@ for(var i = 0; i < 10; i++){
 }
 
 console.log(newArray);
+
+/* ********************************
+*     Functions
+* ********************************/
+
+/* Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar la función y guardar
+el resultado en una variable, mostrando el valor de dicha variable en la consola del navegador. */
+
+function sum(a,b) {
+    return a + b;
+}
+
+var result = sum(3,75);
+
+console.log(result);
