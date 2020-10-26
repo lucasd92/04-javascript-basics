@@ -201,3 +201,16 @@ else if(randomAge < 76){
 else{
     alert('Anciano');
 }
+
+/* ********************************
+*     For
+* ********************************/
+
+/* Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript
+para mostrar una alerta utilizando cada una de las palabras. */
+
+var monthsArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo"];
+
+monthsArray.forEach(function(element,index,array){
+    alert(element);
+});
