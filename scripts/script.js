@@ -117,3 +117,9 @@ console.log(monthsArray[10]);
 
 console.log(monthsArray.sort());
 
+/* Agregar un elemento al principio y al final del array (utilizar unshift y push). */
+
+monthsArray.unshift('newFirstMonth');
+monthsArray.push('newLastMonth');
+
+console.log(monthsArray);
