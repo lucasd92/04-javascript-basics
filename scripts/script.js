@@ -30,3 +30,14 @@ var secondString = 'World';
 
 var result = firstString.length + secondString.length;
 console.log('length of ' + firstString + '+' +'length of ' + secondString + '=' + result);
+
+/* ********************************
+*     Strings
+* ********************************/
+
+/* Crear una variable de tipo string con al menos 10 caracteres y convertir todo el
+ texto en mayúscula (utilizar toUpperCase). */
+
+ var lowerCaseString = "i'm a string";
+
+ console.log(lowerCaseString.toUpperCase());
