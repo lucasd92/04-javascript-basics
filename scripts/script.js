@@ -282,7 +282,7 @@ console.log(sum(3,8));
 entero. */
 
 function validateInteger(a) {
-    if(typeof(a) === 'number'){
+    if((typeof(a) === 'number') && ( a%1 === 0)){
 
         return true;  
     }
@@ -290,5 +290,6 @@ function validateInteger(a) {
     return false;
 }
 
+console.log(validateInteger(15.3));
 console.log(validateInteger(15));
 console.log(validateInteger('Luis'));
