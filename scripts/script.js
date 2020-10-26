@@ -209,8 +209,16 @@ else{
 /* Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript
 para mostrar una alerta utilizando cada una de las palabras. */
 
-var monthsArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo"];
+var monthsArray = ["enero", "febrero", "marzo", "abril", "mayo"];
 
 monthsArray.forEach(function(element,index,array){
     alert(element);
+});
+
+/* Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por 
+cada palabra modificada. */
+
+monthsArray.forEach(function(element,index,array){
+    var auxString = element.substring(0,1).toUpperCase() + element.substring(1);
+    alert(auxString);
 });
