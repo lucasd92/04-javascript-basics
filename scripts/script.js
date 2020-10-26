@@ -71,3 +71,13 @@ var longString = "i'M A lOnG sTrInG";
 var newString = longString.substring(0,1).toUpperCase() + longString.substring(1).toLowerCase();
 
 console.log(newString);    
+
+/* Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco.
+ Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar 
+indexOf). */
+
+var longString = "i'M A lOnG sTrInG";
+
+var firstSpacePosition = longString.indexOf(' ');
+
+console.log('The first space is in position: ' + firstSpacePosition); 
