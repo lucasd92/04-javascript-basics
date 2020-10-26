@@ -222,3 +222,15 @@ monthsArray.forEach(function(element,index,array){
     var auxString = element.substring(0,1).toUpperCase() + element.substring(1);
     alert(auxString);
 });
+
+/* Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo
+con un bucle for para ir guardando cada palabra dentro de la variable sentence. Al final mostrar una única
+alerta con la cadena completa. */
+
+var sentence = '';
+
+monthsArray.forEach(function(element,index,array){
+    sentence += element;
+});
+
+alert(sentence);
