@@ -267,8 +267,8 @@ mostrar una alerta aclarando que uno de los parámetros tiene error y retornar e
 
 function sum(a,b) {
     if((typeof(a) != 'number') || (typeof(b) != 'number')){
-        alert('This function only accepts numbers. Please check the arguments')
-        return NaN    
+        alert('This function only accepts numbers. Please check the arguments');
+        return NaN;    
     }
         
     return a + b;
@@ -277,3 +277,18 @@ function sum(a,b) {
 console.log(sum(3,'Carlos'));
 
 console.log(sum(3,8));
+
+/* Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número 
+entero. */
+
+function validateInteger(a) {
+    if(typeof(a) === 'number'){
+
+        return true;  
+    }
+        
+    return false;
+}
+
+console.log(validateInteger(15));
+console.log(validateInteger('Luis'));
